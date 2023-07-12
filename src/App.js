@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import moveData from './move.json';
-//import DisplayImage from './DisplayImage';
+import axios from 'axios';
 import './App.css';
 
 function App() {
@@ -9,15 +8,22 @@ function App() {
 
   const [image, setImage] = useState(null);
   const [playingAs, setPlayingAs] = useState('WHITE');
-  const handleMoveButtonClick = () => {
+
+  const handleMoveButtonClick = async () => {
     setShowMove(true);
-    setMove(moveData.move);
+
+    try {
+      const response = await axios.get('http://localhost:5000/get-move');
+      setMove(response.data.move);
+    } catch (error) {
+      console.error(`Error: ${error.medssage}`);
+    }
   };
 
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
     const reader = new FileReader();
-  
+
     reader.onload = () => {
       if (reader.readyState === 2) {
         setImage(reader.result);
@@ -52,13 +58,9 @@ function App() {
         >
           WHITE
         </button>
-        
       </div>
       <div>
-        <button
-          className="moveButton" // Add a class to the button
-          onClick={handleMoveButtonClick}
-        >
+        <button className="moveButton" onClick={handleMoveButtonClick}>
           Show Move
         </button>
         {showMove && <p className="moveText">Move: {move}</p>}

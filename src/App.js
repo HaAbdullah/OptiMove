@@ -11,14 +11,42 @@ function App() {
 
   const handleMoveButtonClick = async () => {
     setShowMove(true);
-
+  
     try {
-      const response = await axios.get('http://localhost:5000/get-move');
+      const formData = new FormData();
+      formData.append('playingAs', playingAs);
+  
+      const file = dataURLtoBlob(image);
+      formData.append('image', file, 'image.png');
+  
+      const config = {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      };
+  
+      const response = await axios.post('http://localhost:5000/get-move', formData, config);
       setMove(response.data.move);
     } catch (error) {
-      console.error(`Error: ${error.medssage}`);
+      console.error(`Error: ${error.message}`);
     }
   };
+  
+  // Helper function to convert data URL to Blob
+  function dataURLtoBlob(dataURL) {
+    const arr = dataURL.split(',');
+    const mime = arr[0].match(/:(.*?);/)[1];
+    const bstr = atob(arr[1]);
+    let n = bstr.length;
+    const u8arr = new Uint8Array(n);
+  
+    while (n--) {
+      u8arr[n] = bstr.charCodeAt(n);
+    }
+  
+    return new Blob([u8arr], { type: mime });
+  }
+  
 
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
@@ -42,7 +70,12 @@ function App() {
   return (
     <div className="App">
       <h1 className="title">OptiMove</h1>
-      <input type="file" accept="image/*" onChange={handleImageUpload} />
+      <input
+       type="file"
+       accept="image/*"
+       onChange={handleImageUpload}
+       className="imageUploadButton"
+        />
       {image && <img src={image} alt="Uploaded" />}
       <p className="player">Playing as: {playingAs}</p>
       <div className="buttonGroup">

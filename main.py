@@ -1,6 +1,6 @@
 import time
 import json
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 
 from selenium import webdriver
@@ -10,16 +10,21 @@ from selenium.webdriver.common.action_chains import ActionChains
 import pyperclip
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 
-@app.route('/get-move')
+@app.route('/get-move', methods=['POST'])
 def get_move():
-    toMove = "white"
+    toMove = request.form.get('playingAs', 'white')
+    image_data = request.files['image']
 
+    # Save the image locally
+    image_path = "C:/Users/abdul/All/Chess/BOARD.png"
+    image_data.save(image_path)
+
+    
     def image_to_fen():
         driver = webdriver.Chrome()
         driver.get("https://helpman.komtera.lt/chessocr/")
-        image_path = "C:/Users/abdul/All/Chess/ChessBoard.png"
 
         # Find the file upload element and upload the picture
         file_upload_element = driver.find_element(By.CLASS_NAME, 'drop-zone__input')
@@ -41,25 +46,27 @@ def get_move():
     def FEN_to_move(FEN):
         driver = webdriver.Chrome()
         driver.get("https://chesssuggest.com/")
-        
+
         button = driver.find_element(By.XPATH, "//button[@onclick=\"jQuery('#FEN').css('display', 'flex');\"]")
         actions = ActionChains(driver)
         actions.double_click(button)
         actions.perform()
 
-        enterFEN = driver.find_element(By.ID, 'fenInput').send_keys(FEN)
+        enterFEN = driver.find_element(By.ID, 'fenInput')
+        enterFEN.clear()
+        enterFEN.send_keys(FEN)
 
         Enter_Button = driver.find_element(By.ID, 'enterFen')
         actions = ActionChains(driver)
         actions.click(Enter_Button)
         actions.perform()
 
-        if toMove == "white":
+        if toMove == "WHITE":
             white_Button = driver.find_element(By.ID, 'wMove')
             actions = ActionChains(driver)
             actions.click(white_Button)
             actions.perform()
-        elif toMove == "black":
+        elif toMove == "BLACK":
             black_button = driver.find_element(By.ID, 'bMove')
             actions = ActionChains(driver)
             actions.click(black_button)
@@ -67,7 +74,7 @@ def get_move():
         time.sleep(1)
 
         move_box = driver.find_element(By.ID, 'answer')
-        move = move_box.text
+        move = move_box.text.strip()
         print(move)
 
         driver.quit()

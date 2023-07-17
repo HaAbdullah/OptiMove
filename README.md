@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# OptiMove - Chess Move Suggestion Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+OptiMove is a web application that utilizes Optical Character Recognition (OCR) and web scraping technologies to analyze a chessboard image and provide a recommended move for the given chess position. The application is built using React for the frontend and Flask for the backend.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+OptiMove is a web-based tool designed to assist chess players in analyzing chessboard positions and receiving AI-generated recommendations for their next moves. The application combines computer vision (OCR) and web scraping techniques to interpret the chessboard from an uploaded image. The system then sends the position to a chess engine hosted on a remote server, which suggests the best move based on the given chess position.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+The application is built using the following technologies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React - A JavaScript library for building user interfaces, providing a dynamic and interactive user experience.
 
-### `npm run build`
+- **Backend**: Flask - A lightweight Python web framework used to create the server-side application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Computer Vision**: Selenium - A powerful web automation tool used for interacting with web elements, enabling image uploading and web scraping.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Image Processing**: pyperclip - A Python module used to access the clipboard to extract chessboard positions from the web application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Data Transfer**: Axios - A popular JavaScript library used for making asynchronous HTTP requests, used to communicate with the backend server.
 
-### `npm run eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Upload Chessboard Image**: Users can upload a chessboard image representing the current chess position.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Select Playing Color**: Users can specify if they are playing as "WHITE" or "BLACK" by clicking the corresponding buttons.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Get Move Recommendation**: By clicking the "Show Move" button, the application processes the uploaded image, sends the data to the backend, and retrieves the AI-generated move recommendation.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Display Move Recommendation**: The recommended move is displayed on the user interface, providing the best move based on the given chess position.
 
-## Learn More
+## Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To run the OptiMove application locally, follow these steps:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository: `git clone https://github.com/your-username/opti-move.git`
+2. Navigate to the project directory: `cd opti-move`
+3. Install frontend dependencies: `npm install`
+4. Install backend dependencies: `pip install -r requirements.txt`
+5. Start the React frontend server: `npm start`
+6. Start the Flask backend server: `python main.py`
 
-### Code Splitting
+The application will be accessible at `http://localhost:3000/`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+1. **Upload Chessboard Image**: Click on the "Choose File" button to select a chessboard image from your computer or device.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. **Select Playing Color**: Click on either the "WHITE" or "BLACK" button to specify your playing color.
 
-### Making a Progressive Web App
+3. **Get Move Recommendation**: Click on the "Show Move" button to receive the AI-generated move recommendation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. **View Move Recommendation**: The recommended move will be displayed in the "Move" section of the application.
 
-### Advanced Configuration
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions are welcome and encouraged! If you find a bug, have an idea for an enhancement, or want to contribute in any way, please feel free to submit a pull request.
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed under the [MIT License](LICENSE).
 
-### `npm run build` fails to minify
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For any inquiries or suggestions, please contact the development team at:
+
+- Email: contact@optimove.com
+- Website: [https://www.optimove.com](https://www.optimove.com)

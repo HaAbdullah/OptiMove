@@ -70,11 +70,20 @@ Contributions are welcome and encouraged! If you find a bug, have an idea for an
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+Open Source License - Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0). You are free to share and redistribute this project under the following conditions:
+
+- Attribution: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You must attribute the work to Abdullah Hasanjee.
+- Non-Commercial: You may not use this work for commercial purposes.
+- Derivatives: You may remix, transform, or build upon this work with proper attribution of original work.
+
+For more details about the license, visit: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
 
 ## Contact
 
-For any inquiries or suggestions, please contact the development team at:
+For any inquiries or suggestions, please contact me at:
 
-- Email: contact@optimove.com
-- Website: [https://www.optimove.com](https://www.optimove.com)
+- Email: abdullah.hasanjee@gmail.com
+- Website: [WebPortfolio](https://haabdullah.github.io/WebPortfolio/)

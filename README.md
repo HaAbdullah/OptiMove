@@ -2,6 +2,8 @@
 
 OptiMove is a web application that utilizes Optical Character Recognition (OCR) and web scraping technologies to analyze a chessboard image and provide a recommended move for the given chess position. The application is built using React for the frontend and Flask for the backend.
 
+Live Demo: https://haabdullah.github.io/OptiMove/
+
 ## Table of Contents
 
 - [Introduction](#introduction)

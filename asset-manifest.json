@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/OptiMove/static/css/main.4b65d0b0.css",
-    "main.js": "/OptiMove/static/js/main.73a65202.js",
+    "main.js": "/OptiMove/static/js/main.a433c54c.js",
     "static/js/787.06d920a4.chunk.js": "/OptiMove/static/js/787.06d920a4.chunk.js",
     "index.html": "/OptiMove/index.html",
     "main.4b65d0b0.css.map": "/OptiMove/static/css/main.4b65d0b0.css.map",
-    "main.73a65202.js.map": "/OptiMove/static/js/main.73a65202.js.map",
+    "main.a433c54c.js.map": "/OptiMove/static/js/main.a433c54c.js.map",
     "787.06d920a4.chunk.js.map": "/OptiMove/static/js/787.06d920a4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b65d0b0.css",
-    "static/js/main.73a65202.js"
+    "static/js/main.a433c54c.js"
   ]
 }

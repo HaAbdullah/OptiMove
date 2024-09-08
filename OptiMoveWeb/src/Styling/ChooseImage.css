@@ -1,16 +1,23 @@
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .Interact {
-    /* background-color: rgba(0, 90, 90, 0.5); */
+    /* background-color: rgba(0, 90, 90, 0.5);  */
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 80vh;
     width: 85vw;
+    z-index: 3;
+    animation: slideUp 1.3s ease-out forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .Images{
@@ -19,6 +26,7 @@
     justify-content: space-between;
     height: 70%;
     width: 100%;
+    
 }
 
 .inputs{
@@ -28,6 +36,7 @@
     object-fit: cover;
     cursor: pointer;
 
+
     transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -36,6 +45,24 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transform: translateY(-5px); 
 }
+
+.leftImg {
+    transition: transform 0.7s ease-out, filter 0.7s ease;
+    transform: translateX(30.45vw) !important;
+    filter: brightness(0);
+  }
+
+.rightImg {
+    transition: transform 0.7s ease-out, filter 0.7s ease;
+    transform: translateX(-30.4vw) !important;
+    filter: brightness(0);
+  }
+
+.middleImg{
+    transition: filter 0.7s ease;
+
+    filter: brightness(0);
+  }
 
 .Choice{
     display: flex;
@@ -52,5 +79,10 @@
     font-size: 3.5vw; 
     letter-spacing: 0.1vw; 
     color: white;
-    transition: transform 1.3s ease-in;
+    transition: transform 1s ease-in;
+}
+
+.animatePrompt{
+    transition: transform 0.5s ease-out;
+    transform: translateY(30.4vh);
 }

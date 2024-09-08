@@ -23,7 +23,7 @@ const Opening = ({buttonPressed}) => {
    useEffect(() => {
     const handleTransitionEnd = (event) => {
         console.log('Transition ended:', event);
-        buttonPressed("Select Image");
+        buttonPressed("Image Manipulation");
       };
 
 
@@ -32,13 +32,14 @@ const Opening = ({buttonPressed}) => {
     if (title) {
         title.addEventListener('transitionend', handleTransitionEnd);
     }   
-        const interval = setInterval(() => {
-            const obj = splineRef.current.findObjectByName('Camera');
-            // console.log(obj.position);
-            if (obj && obj.position.y < camera_transition_point && obj.position.x < 4.919602639952208 && obj.position.z == 1019.67 ) {
-                setAnimate(true);
-                console.log("It has moved!");
-                clearInterval(interval);
+    
+    const interval = setInterval(() => {
+        const obj = splineRef.current.findObjectByName('Camera');
+        // console.log(obj.position);
+        if (obj && obj.position.y < camera_transition_point && obj.position.x < 4.919602639952208 && obj.position.z == 1019.67 ) {
+            setAnimate(true);
+            console.log("It has moved!");
+            clearInterval(interval);
             }
         }, 100); // Check every second (1000ms)
 

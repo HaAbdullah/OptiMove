@@ -6,9 +6,8 @@ import ChooseTurn from "./ChooseTurn"
 import Spline from '@splinetool/react-spline';
 
 
-const ImageManipulation = ({buttonPressed, setTurn, Turn, setPOV, POV}) =>{
+const ImageManipulation = ({buttonPressed, setTurn, Turn, setPOV, POV, nextImg, changeNextImg}) =>{
     
-    const [nextImg, changeNextImg] = useState(0);
     const [currentOption, changeOption] = useState("Choose Image");
 
 

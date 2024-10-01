@@ -10,14 +10,17 @@ export default function App() {
   const [scene, setScene] = useState("Image Manipulation");
   const [Turn, setTurn]  = useState (null);
   const [POV, setPOV]  = useState (null);
+  const [nextImg, changeNextImg] = useState(0);
 
   return (
     <div className='container'>
     {scene === "Opening" && <Opening buttonPressed={setScene}/>}
     {scene === "Image Manipulation" && <ImageManipulation buttonPressed={setScene}
     setTurn = {setTurn} Turn = {Turn}
-    setPOV = {setPOV} POV = {POV}/>}
-    {scene === "Final" && <Final POV = {POV} Turn = {Turn}/>}
+    setPOV = {setPOV} POV = {POV}
+    nextImg = {nextImg} changeNextImg = {changeNextImg}/>
+    }
+    {scene === "Final" && <Final POV = {POV} Turn = {Turn} imgNum = {nextImg}/>}
     </div>
   );
 }

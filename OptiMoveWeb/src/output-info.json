@@ -1,0 +1,18 @@
+{
+    "1": {
+        "white": {"Move" : "d7f6", "FEN" : "1n2kb1r/1p1N1p1p/2r1pn2/pN1p2p1/2p1P1QP/3P4/PPP2PP1/R3K2R w - - 0 1"},
+        "black": {"Move" : "f6g4", "FEN" : "1n2kb1r/1p1N1p1p/2r1pn2/pN1p2p1/2p1P1QP/3P4/PPP2PP1/R3K2R b - - 0 1"},
+        "TilesLetters": [ " W", " n", " W", " B", " k", " b", " W", " r", " B", " p", " B", " N", " B", " p", " B", " p", " W", " B", " r", " B", " p", " n", " W", " B", " p", " N", " B", " p", " B", " W", " p", " W", " W", " B", " p", " B", " P", " B", " Q", " P", " B", " W", " B", " P", " B", " W", " B", " W", " P", " P", " P", " B", " W", " P", " P", " B", " R", " W", " B", " W", " K", " W", " B", " R"]
+    },
+    "2": {
+        "white": {"Move" : "f2f3", "FEN" : "4R3/1pr2pk1/p6p/n4p2/4p3/P5P1/4PP1P/4K3 w - - 0 1"},
+        "black": {"Move" : "b7b5", "FEN" : "4R3/1pr2pk1/p6p/n4p2/4p3/P5P1/4PP1P/4K3 b - - 0 1"},
+        "TilesLetters": [ " W", " B", " W", " B", " R", " B", " W", " B", " B", " p", " r", " W", " B", " p", " k", " W", " p", " B", " W", " B", " W", " B", " W", " p", " n", " W", " B", " B", " B", " p", " B", " W", " W", " B", " W", " B", " p", " B", " W", " B", " P", " W", " B", " W", " B", " W", " P", " W", " W", " B", " W", " B", " P", " P", " W", " P", " B", " W", " B", " W", " K", " W", " B", " W"]
+    },
+    "3": {
+        "white": {"Move" : "f6d5", "FEN" : "3k1b2/2p5/p4N1p/1p1n3P/1P4P1/2P2b2/P1n2P2/5K2 w - - 0 1"},
+        "black": {"Move" : "d5f6", "FEN" : "3k1b2/2p5/p4N1p/1p1n3P/1P4P1/2P2b2/P1n2P2/5K2 b - - 0 1"},
+        "TilesLetters": [ " W", " B", " K", " B", " W", " B", " W", " B", " B", " W", " P", " W", " B", " n", " B", " P", " W", " B", " b", " B", " W", " P", " W", " B", " B", " P", " B", " W", " B", " W", " P", " W", " P", " B", " W", " B", " n", " B", " p", " B", " p", " W", " N", " W", " B", " W", " B", " p", " W", " B", " W", " B", " W", " p", " W", " B", " B", " W", " b", " W", " k", " W", " B", " W"]
+    }
+    
+}

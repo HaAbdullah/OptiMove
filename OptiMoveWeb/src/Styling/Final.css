@@ -1,24 +1,28 @@
 .Final{
-    background-color: aliceblue;
-    width: 90%;
+    width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .Main{
-    width: 100%;
-    height: 80%;
-    background-color: rgba(201, 255, 165, 0.5);
-    margin-top: 2.5%;
+    width: 90%;
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     z-index: 1;
     position: relative;
 }
 
 .diagram-row{
     display:flex;
-    height: 70%;
+    height: 60%;
     width: 100%;
     align-items: center;
-    background-color: rgba(167, 246, 115, 0.5);
+
     position: relative;
 }
 
@@ -27,14 +31,13 @@
     height: 100%;
     flex: 1;
     align-items: center;
-    background-color: rgba(115, 246, 117, 0.5);
 }
 
 .board-img{
     height: auto;
     width: 100%;
     box-sizing: border-box;
-    background-color: blue;
+
     border: 5px solid #4045C9;
 }
 .transition-arrow {
@@ -42,7 +45,6 @@
     height: 100%;
     flex: 0.5;
     align-items: center;
-    background-color: rgba(115, 146, 246, 0.5);
     position: relative;
 }
 
@@ -92,7 +94,7 @@
     height: 100%;
     flex: 1.5;
     align-items: center;
-    background-color: rgba(159, 115, 246, 0.5);
+ 
 }
 
 .tiles-container{
@@ -128,7 +130,7 @@
     flex: 1;
     justify-content: center;
     align-items: center;
-    background-color: rgba(246, 115, 237, 0.5);
+
 }
 
 .letter-tiles{
@@ -152,17 +154,68 @@
 
 }
 
-.connector-container{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(100, 30, 30);
-}
 
 .result-container{
     width: 100%;
-    height: 30%;
-    background-color: rgb(72, 75, 75);
+    height: 28%;
+
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 35px;
+}
+.FEN{
+    margin-top: 6px;
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;
+    background-color: #0F1A20;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-size: 21.5px;
+    font-weight: bold;
+    color: #FF4D94;
+    border: 4px solid #4045C9;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 35px;
+
+}
+
+.Move{
+    width: 10%;
+    height: 25%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0F1A20;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 7px;
+    padding-left: 7px; /*To counter act the 7px added after the last letter */
+    color: #FF4D94;
+    border: 4px solid #4045C9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 7px;
+}
+
+.reset-img{
+    height: 61px;
+    width: 61px;
+    cursor: pointer;
+    margin-top: 7px;
 }
 
 .line-container{
@@ -176,6 +229,51 @@
 
 .Footer{
     width: 100%;
-    height: 15%;
-    background-color: rgba(97, 102, 241, 0.5);
+    height: 12%;
+    background-color: #6166F1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.Title{
+    font-family: 'Coolvetica', sans-serif;
+    font-size: 55px; 
+    letter-spacing: 0.1vw; 
+    color: #E1E0E0;
+
+}
+.description-container{
+    width: 50%;
+    margin-left: -5vw
+}
+p{ 
+    font-family: "Rubik", sans-serif;
+    font-size: 14px; 
+    letter-spacing: 0.1vw; 
+    color: #E1E0E0;
+}
+.github-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 12%;
+    height: 50%;
+
+}
+
+.github-logo {
+    width: 20px;
+    height: 21px;
+    margin-right: 5px; 
+    color:white;
+    
+}
+.button-txt{
+    margin-top: 2px;
+    font-family: "Rubik", sans-serif;
+    color:white;
 }

@@ -169,7 +169,7 @@
 }
 .FEN{
     margin-top: 6px;
-    width: 50%;
+    padding: 0px 7px 0px 7px;
     height: 50%;
     box-sizing: border-box;
     background-color: #0F1A20;
@@ -262,18 +262,38 @@ p{
     border-radius: 10px;
     width: 12%;
     height: 50%;
-
-}
+    transition: border-color 0.1s ease-in transform 0.2s ease-in;
+    cursor: pointer;
+}   
 
 .github-logo {
-    width: 20px;
-    height: 21px;
+    width: 23px;
+    height: 24px;
     margin-right: 5px; 
     color:white;
+    transition: color 0.1s ease-in  transform 0.2s ease-in;
     
 }
 .button-txt{
     margin-top: 2px;
     font-family: "Rubik", sans-serif;
+    font-weight: regular;
     color:white;
+    transition: color 0.1s ease-in  transform 0.2s ease-in;
+}
+
+.github-btn:hover .github-logo {
+    color: #FF4D94; 
+    transform: scale(110%)
+}
+
+.github-btn:hover .button-txt {
+    color: #FF4D94; 
+    transform: scale(110%);
+    margin-left: 5px;
+}
+
+.github-btn:hover {
+    border-color: #FF4D94;
+    transform: scale(105%)
 }

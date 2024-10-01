@@ -266,7 +266,18 @@ const Final = ({ Turn, POV, imgNum, sceneChanger }) => {
               fill="currentColor"
             />
           </svg>
-          <div className="button-txt">VISIT GITHUB</div>
+          <div
+            className="button-txt"
+            onClick={() =>
+              window.open(
+                "https://github.com/HaAbdullah/OptiMove",
+                "_blank",
+                "noreferrer"
+              )
+            }
+          >
+            VISIT GITHUB
+          </div>
         </div>
       </div>
       {/* <div className='line-container'></div> */}
@@ -275,3 +286,5 @@ const Final = ({ Turn, POV, imgNum, sceneChanger }) => {
 };
 
 export default Final;
+
+//enjoy: https://youtube.com/shorts/opABLRcCDzw?si=O56_HsVFAOdZclz0

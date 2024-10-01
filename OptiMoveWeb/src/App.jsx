@@ -5,7 +5,7 @@ import Opening from "./Opening";
 import ImageManipulation from "./ImageManipulation";
 import Final from "./Final";
 export default function App() {
-  const [scene, setScene] = useState("Image Manipulation");
+  const [scene, setScene] = useState("Opening");
   const [Turn, setTurn] = useState(null);
   const [POV, setPOV] = useState(null);
   const [nextImg, changeNextImg] = useState(0);

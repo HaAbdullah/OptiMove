@@ -18,9 +18,27 @@
   ```bash
   pip install --no-cache-dir -r requirements.txt
   ```
-4. Place your image in the current directory.
+4. Place an image containing a chess board in the current directory.
 
 5. Run the program:
   ```bash
   python main.py
   ```
+
+### What is OptiMove?
+
+**OptiMove** is an innovative chess move recommendation system that harnesses the power of computer vision and machine learning to enhance your chess-playing experience. This application detects chessboards in images, extracts them from their backgrounds, and accurately identifies the chess pieces and their positions.
+
+## Key Features:
+- **Chessboard Detection**: Utilizes advanced computer vision techniques to recognize chessboards in various images.
+- **Piece Identification**: Employs a Convolutional Neural Network (CNN) built with TensorFlow to achieve 92% accuracy in identifying chess pieces.
+- **FEN Generation**: Automatically generates Forsyth-Edwards Notation (FEN) for the detected chess position.
+- **Move Calculation**: Calculates the best possible move based on the current board position.
+
+## Technologies Used:
+- **Backend**: Python with OpenCV, NumPy, Flask, and Pandas
+- **Frontend**: HTML/CSS and React
+- **Machine Learning**: TensorFlow, Jupyter, and Pillow
+
+To try the full application with any image, please visit the [GitHub Repository](link-to-your-repo).
+

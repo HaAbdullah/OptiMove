@@ -1,5 +1,6 @@
 ﻿# OptiMove2
-
+For a demo of the application with 3 inputs, visit: https://haabdullah.github.io/OptiMove/
+To try the full application with any image, please continue to the following steps:
 ## Quick Start
 
 [Docker container installation link coming soon]
@@ -39,6 +40,4 @@
 - **Backend**: Python with OpenCV, NumPy, Flask, and Pandas
 - **Frontend**: HTML/CSS and React
 - **Machine Learning**: TensorFlow, Jupyter, and Pillow
-
-To try the full application with any image, please visit the [GitHub Repository](link-to-your-repo).
 

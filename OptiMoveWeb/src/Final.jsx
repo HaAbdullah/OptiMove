@@ -80,7 +80,7 @@ const Final = ({ Turn, POV, imgNum, sceneChanger }) => {
           {tileSrc ? (
             <img className="tile-img" src={tileSrc} alt={tileName} />
           ) : (
-            <div className="loading">Loading...</div>
+            <div className="loading">...</div>
           )}
         </div>
       );

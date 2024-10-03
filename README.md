@@ -1,5 +1,5 @@
 ﻿# OptiMove2
-For a demo of the application with 3 inputs, visit: https://haabdullah.github.io/OptiMove/
+For a demo of the application with 3 inputs, visit: https://haabdullah.github.io/OptiMove/  
 To try the full application with any image, please continue to the following steps:
 ## Quick Start
 

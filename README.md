@@ -8,7 +8,8 @@
 
 1. **Download the repository** to your local machine. You can do this by clicking on the green "Code" button and selecting "Download ZIP" or using `git clone` in your terminal:
    ```bash
-   git clone [<repository-url>](https://github.com/HaAbdullah/OptiMove)
+   git clone https://github.com/HaAbdullah/OptiMove
+   ```
 2. Navigate to the repository directory in your terminal and change directory to subfolder:
   ```bash
   cd OptiMove2

@@ -41,3 +41,5 @@ To try the full application with any image, please continue to the following ste
 - **Frontend**: HTML/CSS and React
 - **Machine Learning**: TensorFlow, Jupyter, and Pillow
 
+## Design Files
+Figma file: https://www.figma.com/design/v556gxHBi8vJGHHk6tckTj/OptiMove?node-id=0-1&t=m4QAiG5vqnLVqGIq-1

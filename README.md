@@ -16,6 +16,7 @@ To try the full application with any image, please continue to the following ste
    docker run -it -v ${PWD}/chess-images:/app/images optimove2
    ```
 4. **Place an Image**: Add your chessboard images to the chess-images directory you created earlier.
+
 5. **Access the Application**: Follow the terminal instructions within the Docker container to utilize the application and get chess move recommendations.
 
 ### Start without Docker

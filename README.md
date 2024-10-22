@@ -8,7 +8,6 @@ To try the full application with any image, please continue to the following ste
    docker pull haabdullah/optimove2:latest
    ```
 2. **Create a Directory for Images**: Create a local directory where you will place your chessboard images:
-### Start without Docker
    ```bash
    mkdir chess-images
    ```

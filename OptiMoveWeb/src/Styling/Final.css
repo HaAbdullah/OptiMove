@@ -1,298 +1,288 @@
-.Final{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.Final {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.Main{
-    width: 90%;
-    height: 88%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    position: relative;
+.Main {
+  width: 90%;
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
 }
 
-.diagram-row{
-    display:flex;
-    height: 60%;
-    width: 100%;
-    align-items: center;
+.diagram-row {
+  display: flex;
+  height: 60%;
+  width: 100%;
+  align-items: center;
 
-    position: relative;
+  position: relative;
 }
 
-.board-container{
-    display:flex;
-    height: 100%;
-    flex: 1;
-    align-items: center;
+.board-container {
+  display: flex;
+  height: 100%;
+  flex: 1;
+  align-items: center;
 }
 
-.board-img{
-    height: auto;
-    width: 100%;
-    box-sizing: border-box;
+.board-img {
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
 
-    border: 5px solid #4045C9;
+  border: 5px solid #4045c9;
 }
 .transition-arrow {
-    display: flex;
-    height: 100%;
-    flex: 0.5;
-    align-items: center;
-    position: relative;
+  display: flex;
+  height: 100%;
+  flex: 0.5;
+  align-items: center;
+  position: relative;
 }
 
 .arrow {
-    position: relative;
-    left: 30%;
-    transform:  rotate(-90deg); /* Combined transforms */
+  position: relative;
+  left: 30%;
+  transform: rotate(-90deg); /* Combined transforms */
 }
 
-
 .arrow span {
-    display: block;
-    width: 2vw;
-    height: 2vw;
-    border-bottom: 5px solid #FF4D94;
-    border-right: 5px solid #FF4D94;
+  display: block;
+  width: 2vw;
+  height: 2vw;
+  border-bottom: 5px solid #ff4d94;
+  border-right: 5px solid #ff4d94;
   transform: rotate(45deg);
-    animation: animate 2s infinite reverse;
+  animation: animate 2s infinite reverse;
 }
 
 .arrow span:nth-child(2) {
-    animation-delay: -0.2s;
+  animation-delay: -0.2s;
 }
 
 .arrow span:nth-child(3) {
-    animation-delay: -0.4s;
+  animation-delay: -0.4s;
 }
 
 @keyframes animate {
-    0% {
-        opacity: 0;
-        transform: rotate(45deg) translate(20px, 20px); 
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px, -20px); 
-    }
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
 }
 
-.board-tiles{
-    display:flex;
-    justify-content: center;
-    height: 100%;
-    flex: 1.5;
-    align-items: center;
- 
+.board-tiles {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex: 1.5;
+  align-items: center;
 }
 
-.tiles-container{
-    
-    display: grid;
-    box-sizing: border-box;
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-columns: repeat(8, 1fr);
-    width: 25vw;
-    height: 25.4vw;
-    gap: 7px;
+.tiles-container {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  width: 25vw;
+  height: 25.4vw;
+  gap: 7px;
 }
 
 .tile {
-    background-color: #1E1C1C;
-    width: 100%;
-    height: 100%; 
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
+  background-color: #1e1c1c;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tile-img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.letter-tiles-container{
-    display:flex;
-    height: 100%;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-
+.letter-tiles-container {
+  display: flex;
+  height: 100%;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 
-.letter-tiles{
-    display: grid;
-    box-sizing: border-box;
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-columns: repeat(8, 1fr);
-    width: 20vw;
-    height: 20vw;
-    gap: 7px;
+.letter-tiles {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  width: 20vw;
+  height: 20vw;
+  gap: 7px;
 }
 
-.tile-letter{
-    background-color: #4045C9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Inconsolata", monospace;
+.tile-letter {
+  background-color: #4045c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inconsolata", monospace;
   font-optical-sizing: auto;
   font-size: 3vh;
   color: white;
-
 }
 
+.result-container {
+  width: 100%;
+  height: 28%;
 
-.result-container{
-    width: 100%;
-    height: 28%;
-
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    padding-top: 35px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-top: 35px;
 }
-.FEN{
-    margin-top: 6px;
-    padding: 0px 7px 0px 7px;
-    height: 50%;
-    box-sizing: border-box;
-    background-color: #0F1A20;
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-size: 21.5px;
-    font-weight: bold;
-    color: #FF4D94;
-    border: 4px solid #4045C9;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 35px;
-
+.FEN {
+  margin-top: 6px;
+  padding: 0px 7px 0px 7px;
+  height: 50%;
+  box-sizing: border-box;
+  background-color: #0f1a20;
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-size: 21.5px;
+  font-weight: bold;
+  color: #ff4d94;
+  border: 4px solid #4045c9;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 35px;
 }
 
-.Move{
-    width: 10%;
-    height: 25%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #0F1A20;
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 7px;
-    padding-left: 7px; /*To counter act the 7px added after the last letter */
-    color: #FF4D94;
-    border: 4px solid #4045C9;
+.Move {
+  width: 10%;
+  height: 25%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #0f1a20;
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 7px;
+  padding-left: 7px; /*To counter act the 7px added after the last letter */
+  color: #ff4d94;
+  border: 4px solid #4045c9;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    margin-top: 7px;
+  margin-top: 7px;
 }
 
-.reset-img{
-    height: 61px;
-    width: 61px;
-    cursor: pointer;
-    margin-top: 7px;
+.reset-img {
+  height: 61px;
+  width: 61px;
+  cursor: pointer;
+  margin-top: 7px;
 }
 
-.line-container{
-    position: absolute;
-    top: 0; /* Positioning at the top of .Main */
-    width: 100%;
-    height: 100%;
-    background-color: rgba(150, 20, 20, 0.0);
-    z-index: 2; 
+.line-container {
+  position: absolute;
+  top: 0; /* Positioning at the top of .Main */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(150, 20, 20, 0);
+  z-index: 2;
 }
 
-.Footer{
-    width: 100%;
-    height: 12%;
-    background-color: #6166F1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.Footer {
+  width: 100%;
+  height: 12%;
+  background-color: #6166f1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-
-.Title{
-    font-family: 'Coolvetica', sans-serif;
-    font-size: 55px; 
-    letter-spacing: 0.1vw; 
-    color: #E1E0E0;
-
+.Title {
+  font-family: "Coolvetica", sans-serif;
+  font-size: 55px;
+  letter-spacing: 0.1vw;
+  color: #e1e0e0;
 }
-.description-container{
-    width: 50%;
-    margin-left: -5vw
+.description-container {
+  width: 50%;
+  margin-left: -5vw;
 }
-p{ 
-    font-family: "Rubik", sans-serif;
-    font-size: 14px; 
-    letter-spacing: 0.1vw; 
-    color: #E1E0E0;
+p {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.1vw;
+  color: #e1e0e0;
 }
 .github-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid white;
-    border-radius: 10px;
-    width: 12%;
-    height: 50%;
-    transition: border-color 0.1s ease-in transform 0.2s ease-in;
-    cursor: pointer;
-}   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 12%;
+  height: 50%;
+  transition: border-color 0.2s ease-in, transform 0.2s ease-in;
+  cursor: pointer;
+}
 
 .github-logo {
-    width: 23px;
-    height: 24px;
-    margin-right: 5px; 
-    color:white;
-    transition: color 0.1s ease-in  transform 0.2s ease-in;
-    
+  width: 23px;
+  height: 24px;
+  margin-right: 5px;
+  color: white;
+  transition: color 0.2s ease-in, transform 0.2s ease-in;
 }
-.button-txt{
-    margin-top: 2px;
-    font-family: "Rubik", sans-serif;
-    font-weight: regular;
-    color:white;
-    transition: color 0.1s ease-in  transform 0.2s ease-in;
+.button-txt {
+  margin-top: 2px;
+  font-family: "Rubik", sans-serif;
+  font-weight: regular;
+  color: white;
+  transition: color 0.2s ease-in, transform 0.2s ease-in;
 }
 
 .github-btn:hover .github-logo {
-    color: #FF4D94; 
-    transform: scale(110%)
+  color: #ff4d94;
+  transform: scale(110%);
 }
 
 .github-btn:hover .button-txt {
-    color: #FF4D94; 
-    transform: scale(110%);
-    margin-left: 5px;
+  color: #ff4d94;
+  transform: scale(110%);
+  margin-left: 5px;
 }
 
 .github-btn:hover {
-    border-color: #FF4D94;
-    transform: scale(105%)
+  border-color: #ff4d94;
+  transform: scale(110%);
 }

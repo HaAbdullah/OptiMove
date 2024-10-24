@@ -5,17 +5,18 @@ To try the full application with any image, please continue to the following ste
 
 1. **Pull the Docker Image**: Begin by pulling the latest version of the OptiMove2 Docker image from Docker Hub:
    ```bash
-   docker pull haabdullah/optimove2:latest
+   docker pull haabdullah/optimove:latest
    ```
 2. **Create a Directory for Images**: Create a local directory where you will place your chessboard images:
    ```bash
    mkdir chess-images
    ```
-3. **Run the Docker Container**: Launch the Docker container, mounting the local images directory to the container:
+3. **Place an Image**: Add your chessboard images to the chess-image directory.
+
+4. **Run the Docker Container**: Launch the Docker container, mounting the local images directory to the container:
    ```bash
-   docker run -it -v ${PWD}/chess-images:/app/images optimove2
+   docker run -it -v ${PWD}/chess-images:/app/images optimove
    ```
-4. **Place an Image**: Add your chessboard images to the chess-images directory you created earlier.
 
 5. **Access the Application**: Follow the terminal instructions within the Docker container to utilize the application and get chess move recommendations.
 

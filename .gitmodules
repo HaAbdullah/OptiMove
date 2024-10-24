@@ -3,4 +3,4 @@
 	url = https://github.com/HaAbdullah/OptiMove2
 [submodule "OptiMoveDocker"]
 	path = OptiMoveDocker
-	url = https://github.com/HaAbdullah/OptiMove
+	url = https://github.com/HaAbdullah/OptiMoveDocker

@@ -1,0 +1,132 @@
+.ChooseTurnContainer {
+    /* background-color: rgba(0, 90, 90, 0.5); */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    width: 85vw;
+    z-index: 3;
+}
+
+.transitionScreen{
+    position: absolute;
+    z-index: 4;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1E1C1C;
+    transform: translateX(100vw);
+    transition: transform 1s ease-in;
+}
+.transitionScreen.active{
+    transform: translateX(0vw);
+}
+
+
+.Center-Image{ 
+    margin-top: 5vh;   
+    border: 6px solid #4045C9;
+    width:  23.44vw; 
+    height: 51.8vh; 
+    object-fit: cover;
+}
+
+.fade-in {
+    animation: fadeIn 2s forwards; 
+  }
+  
+  @keyframes fadeIn {
+    0% {
+        filter: brightness(0%);
+    }
+    100% {
+        filter: brightness(100%);
+        transform: scale(120%);
+    }
+  }
+
+
+.turn-container{
+    margin-top: 5.18vh;
+    width: 32vw;
+    height: 14vh;
+    background-color: rgb(249, 52, 52);
+    display: flex;
+    cursor: pointer;
+
+    animation: slideUp 0.7s ease-out forwards;
+}
+
+:root {
+    --fontSize: 4.5rem;
+}
+
+.black{
+    height: 100%;
+    width: 50%;
+    background-color: #0A1115;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Coolvetica', sans-serif;
+    font-size: var(--fontSize); 
+    letter-spacing: 0.1vw; 
+    color: #E1E0E0;
+    transition: transform 1s ease-in;
+}
+.white{
+    height: 100%;
+    width: 50%;
+    background-color: #E1E0E0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Coolvetica', sans-serif;
+    font-size: var(--fontSize); 
+    letter-spacing: 0.1vw; 
+    color: #0A1115;
+    transition: transform 1s ease-in;
+}
+
+.white:hover, .black:hover{
+    border: 4px solid #FF4D94;
+}
+.prompt-2{
+    font-family: 'Coolvetica', sans-serif;
+    font-size: 3.5vw; 
+    letter-spacing: 0.1vw; 
+    color: white;
+    transition: transform 1s ease-in;
+}
+
+.prompt-2.initial-animation {
+    animation: slideUp 0.7s ease-out forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.move-down, .move-up {
+    transition: transform 0.3s ease-out;
+}
+
+.move-down {
+    transform: translateY(13vh) !important;
+}
+
+.move-up {
+    transform: translateY(0) !important;
+}

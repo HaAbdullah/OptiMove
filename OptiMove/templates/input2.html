@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OptiMove</title>
+    <script src="{{ url_for('static', filename='script2.js') }}" defer></script>
+    <!-- Use defer -->
+  </head>
+  <body>
+    <form method="POST">
+      <h2>
+        Is the image being viewed from the White or Black POV? (white / black)
+      </h2>
+      <input type="text" name="usrPOV" value="white" required />
+      <h2>Whose turn is it? (white / black)</h2>
+      <input type="text" name="usrTurn" value="white" required />
+      <h2>Please attach an image required</h2>
+      <input
+        type="file"
+        id="usrImg"
+        name="usrImg"
+        accept="image/*"
+        onchange="handleImageUpload()"
+        required
+      />
+    </form>
+    <h1 id="fen"></h1>
+    <h1 id="move"></h1>
+    <pre id="letters"></pre>
+  </body>
+</html>

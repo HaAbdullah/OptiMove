@@ -52,7 +52,7 @@ Disclaimer: The Docker version currently does not have a graphical user interfac
 
 ### Directory Structure Explained
 
-- **OptiMoveMain**: The complete OptiMove app. Contains the front end React and the backend Flask as well as model. You should install this directory if you want the complete OptiMove Experience
+- **OptiMoveMain**: The complete OptiMove app. Contains the **frontend built with React**, the **backend powered by Flask**, and the underlying machine learning model. Install this directory for the complete OptiMove experience.
 - **OptiMoveBackend**: Contains all CNN models and a dataset of over 10,000 chess pieces. It also includes a command-line interface (CLI) for importing your own images. Simply place your image in the input folder and run `main.py` to use this functionality.
 - **OptiMoveDemo**: Offers a demo of the frontend with three sample inputs. You can access it here: https://haabdullah.github.io/OptiMove/
 - **OptiMoveDocker**: Contains the Docker image for the OptiMove project.

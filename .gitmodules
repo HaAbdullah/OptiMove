@@ -1,6 +1,6 @@
 [submodule "OptiMove2"]
-	path = OptiMove2
-	url = https://github.com/HaAbdullah/OptiMove2
+	path = OptiMoveBackend
+	url = https://github.com/HaAbdullah/OptiMoveBackend
 [submodule "OptiMoveDocker"]
 	path = OptiMoveDocker
 	url = https://github.com/HaAbdullah/OptiMoveDocker

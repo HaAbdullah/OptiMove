@@ -4,3 +4,6 @@
 [submodule "OptiMoveDocker"]
 	path = OptiMoveDocker
 	url = https://github.com/HaAbdullah/OptiMoveDocker
+[submodule "OptiMoveMain"]
+	path = OptiMoveMain
+	url = https://github.com/HaAbdullah/OptiMoveMain

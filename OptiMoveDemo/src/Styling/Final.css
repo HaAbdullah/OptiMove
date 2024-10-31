@@ -256,33 +256,31 @@ p {
   cursor: pointer;
 }
 
+.github-logo,
+.button-txt {
+  transition: color 0.2s ease-in;
+}
+
 .github-logo {
   width: 23px;
   height: 24px;
   margin-right: 5px;
   color: white;
-  transition: color 0.2s ease-in, transform 0.2s ease-in;
 }
+
 .button-txt {
   margin-top: 2px;
   font-family: "Rubik", sans-serif;
   font-weight: regular;
   color: white;
-  transition: color 0.2s ease-in, transform 0.2s ease-in;
-}
-
-.github-btn:hover .github-logo {
-  color: #ff4d94;
-  transform: scale(110%);
-}
-
-.github-btn:hover .button-txt {
-  color: #ff4d94;
-  transform: scale(110%);
-  margin-left: 5px;
 }
 
 .github-btn:hover {
   border-color: #ff4d94;
-  transform: scale(110%);
+  transform: scale(1.1);
+}
+
+.github-btn:hover .github-logo,
+.github-btn:hover .button-txt {
+  color: #ff4d94;
 }

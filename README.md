@@ -70,7 +70,7 @@ Disclaimer: The Docker version currently does not have a graphical user interfac
 - **Backend**: Python with OpenCV, NumPy, Flask, and Pandas
 - **Frontend**: HTML/CSS and React
 - **Machine Learning**: TensorFlow, Jupyter, and Pillow
-- **Others**: Docker, Axios, and Stockfish
+- **Others**: Docker, Axios, Stockfish, and Spline
 
 ## Design Files
 Figma file: https://www.figma.com/design/v556gxHBi8vJGHHk6tckTj/OptiMove?node-id=0-1&t=m4QAiG5vqnLVqGIq-1
